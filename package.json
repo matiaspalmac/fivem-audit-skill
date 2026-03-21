@@ -1,0 +1,44 @@
+{
+  "name": "fivem-audit",
+  "version": "2.0.0",
+  "description": "Claude Code skill for FiveM resource auditing — security, performance, compatibility. Backdoor/RAT detection, SQLi, NUI exploitation, state bags. Supports ESX, QBCore, QBox, ox_lib, ND_Core.",
+  "keywords": [
+    "fivem",
+    "fivem-audit",
+    "fivem-security",
+    "claude-code",
+    "claude-code-skill",
+    "esx",
+    "qbcore",
+    "qbox",
+    "nd-core",
+    "lua",
+    "fivem-resource",
+    "security-audit",
+    "backdoor-detection",
+    "anticheat",
+    "oxmysql",
+    "nui-exploit",
+    "state-bags",
+    "gta5"
+  ],
+  "author": "Dei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiaspalmac/fivem-audit-skill.git"
+  },
+  "homepage": "https://github.com/matiaspalmac/fivem-audit-skill#readme",
+  "bugs": {
+    "url": "https://github.com/matiaspalmac/fivem-audit-skill/issues"
+  },
+  "bin": {
+    "fivem-audit": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skill.md",
+    "LICENSE",
+    "README.md"
+  ]
+}
