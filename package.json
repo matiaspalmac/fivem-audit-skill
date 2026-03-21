@@ -1,6 +1,6 @@
 {
   "name": "fivem-audit",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Claude Code skill for FiveM resource auditing — security, performance, compatibility. Backdoor/RAT detection, SQLi, NUI exploitation, state bags. Supports ESX, QBCore, QBox, ox_lib, ND_Core.",
   "keywords": [
     "fivem",
