@@ -1,11 +1,11 @@
-name: Publish to npm
+name: Publish
 
 on:
   release:
     types: [published]
 
 jobs:
-  publish:
+  npm:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,3 +19,25 @@ jobs:
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  github-packages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com
+          scope: '@matiaspalmac'
+      - run: |
+          node -e "
+            const pkg = require('./package.json');
+            pkg.name = '@matiaspalmac/fivem-audit';
+            require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+          "
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
