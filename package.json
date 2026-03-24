@@ -1,13 +1,14 @@
 {
   "name": "fivem-audit",
-  "version": "2.0.2",
-  "description": "Claude Code skill for FiveM resource auditing — security, performance, compatibility. Backdoor/RAT detection, SQLi, NUI exploitation, state bags. Supports ESX, QBCore, QBox, ox_lib, ND_Core.",
+  "version": "3.0.0",
+  "description": "Claude Code skill for FiveM resource auditing — security, performance, compatibility. Backdoor/RAT detection, supply chain attacks, token grabbers, SQLi, NUI exploitation, state bags. Supports ESX, QBCore, QBox, ox_lib, ND_Core. Optimized for Opus 4.6.",
   "keywords": [
     "fivem",
     "fivem-audit",
     "fivem-security",
     "claude-code",
     "claude-code-skill",
+    "claude-opus",
     "esx",
     "qbcore",
     "qbox",
@@ -16,11 +17,15 @@
     "fivem-resource",
     "security-audit",
     "backdoor-detection",
+    "malware-detection",
+    "supply-chain",
     "anticheat",
     "oxmysql",
     "nui-exploit",
     "state-bags",
-    "gta5"
+    "gta5",
+    "cipher-panel",
+    "rat-detection"
   ],
   "author": "Dei",
   "license": "MIT",
@@ -37,7 +42,8 @@
   },
   "files": [
     "bin/",
-    "skill.md",
+    "SKILL.md",
+    "checks/",
     "LICENSE",
     "README.md"
   ]
